@@ -5,14 +5,14 @@ profiles:
     home_page: "index.html"
     title: "Craig Weber"
   - name: release
-    site_root: "https://weberc2.github.io"
+    site_root: "https://blog.weberc2.com"
     home_page: "index.html"
     title: "Craig Weber"
     author:
       name: "Craig Weber"
       email: "weberc2@gmail.com"
-  - name: blog-weberc2-com
-    site_root: "https://blog.weberc2.com"
+  - name: internal
+    site_root: "https://blog.falcon-atlas.ts.net"
     home_page: "index.html"
     title: "Craig Weber"
     author:

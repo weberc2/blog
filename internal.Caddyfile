@@ -1,0 +1,12 @@
+# NOTE: setting `http://` disables TLS, which is desirable because Tailscale
+# manages TLS for the internal network.
+http://blog.falcon-atlas.ts.net {
+    root * /usr/share/caddy
+    file_server
+    encode gzip
+    log {
+        output stderr
+        format json
+        level INFO
+    }
+}
