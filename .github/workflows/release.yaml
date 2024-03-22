@@ -27,7 +27,9 @@ jobs:
           platforms: linux/amd64,linux/arm64
           build-args: FUTHORC_PROFILE=release
           push: true
-          tags: weberc2/blog:release
+          tags: |
+            weberc2/blog:release
+            weberc2/blog:release-${{ github.sha }}
       - name: Build and push 'internal'
         uses: docker/build-push-action@v5
         with:
@@ -35,4 +37,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           build-args: FUTHORC_PROFILE=internal
           push: true
-          tags: weberc2/blog:internal
+          tags: |
+            weberc2/blog:internal
+            weberc2/blog:internal-${{ github.sha }}
