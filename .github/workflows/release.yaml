@@ -28,6 +28,8 @@ jobs:
           build-args: FUTHORC_PROFILE=release
           push: true
           tags: |
+            weberc2/blog:latest
+            weberc2/blog:${{ github.sha }}
             weberc2/blog:release
             weberc2/blog:release-${{ github.sha }}
       - name: Build and push 'internal'
