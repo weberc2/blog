@@ -22,7 +22,9 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           platforms: linux/amd64,linux/arm64
-          build-args: PROFILE=release,SITE_ROOT=https://blog.weberc2.com
+          build-args: |
+            PROFILE=release
+            SITE_ROOT=https://blog.weberc2.com
           push: true
           tags: |
             weberc2/blog:latest
@@ -33,7 +35,9 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           platforms: linux/amd64,linux/arm64
-          build-args: PROFILE=internal,SITE_ROOT=https://blog.falcon-atlas.ts.net
+          build-args: |
+            PROFILE=internal
+            SITE_ROOT=https://blog.falcon-atlas.ts.net
           push: true
           tags: |
             weberc2/blog:internal
