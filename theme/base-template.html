@@ -1,8 +1,8 @@
 {{- define "post-meta" }}
 <div class="post-meta">
-    <span class="post-date">{{.date}}</span>
-    {{- range .tags }}
-    <span class="tag"><a href="{{.url}}">{{.tag}}</a></span>
+    <span class="post-date">{{.Date}}</span>
+    {{- range .Tags }}
+    <span class="tag"><a href="{{.URL}}">{{.Text}}</a></span>
     {{- end }}
 </div>
 {{- end }}
@@ -15,8 +15,8 @@
     <meta name="google-site-verification" content="cw0Nbm73FcLB9kSYvCUhc5q-6CrLFcgJQy0h_qzG0O8" />
     <link href='https://fonts.googleapis.com/css?family=Neuton|Merriweather|Inconsolata:400,700' rel='stylesheet'
         type='text/css'>
-    <link rel="stylesheet" type="text/css" href="{{.static_url}}/style.css">
-    <link rel="alternate" type="application/atom+xml" title="Craig Weber" href="{{.atom_url}}">
+    <link rel="stylesheet" type="text/css" href="{{.ThemeAssets}}/style.css">
+    <link rel="alternate" type="{{.FeedType}}" title="Craig Weber" href="{{.FeedURL}}">
     <script>
         function submitAnalytics() {
             const analyticsUrl = "https://azd7mnx3pk.execute-api.us-east-2.amazonaws.com";
@@ -35,18 +35,18 @@
 </head>
 
 <body onload=submitAnalytics()>
-    <h1 id="site-header"><a id="site-title" href="{{.home_page}}">Craig Weber</a></h1>
+    <h1 id="site-header"><a id="site-title" href="{{.HomePage}}">Craig Weber</a></h1>
     <div id="page" class="center-column">
         {{- template "body" . }}
         <div id="pagination">
-            {{- if .prev }}
+            {{- if .Prev }}
             <div class="pagination" id="pagination-prev">
-                <a href={{.prev}}>&laquo;&nbsp;Previous</a>
+                <a href={{.Prev|url}}>&laquo;&nbsp;Previous</a>
             </div>
             {{- end }}
-            {{- if .next }}
+            {{- if .Next }}
             <div class="pagination" id="pagination-next">
-                <a href={{.next}}>Next&nbsp;&raquo;</a>
+                <a href={{.Next|url}}>Next&nbsp;&raquo;</a>
             </div>
             {{- end }}
         </div>
@@ -65,8 +65,9 @@
                 <h4>Contact</h4>
                 <ul>
                     <li><a href="https://twitter.com/weberc2">Twitter</a></li>
+                    <li><a href="https://stranger.social/@weberc2">Mastodon</a></li>
                     <li><a href="https://github.com/weberc2">Github</a></li>
-                    <li><a href="{{.atom_url}}">Atom Feed</a></li>
+                    <li><a href="{{.FeedURL}}">Syndicated Feed</a></li>
                 </ul>
             </div>
             <div class="footer-section">

@@ -4,14 +4,14 @@
 
 {{- define "body" }}
 <div id="post-list">
-    {{- range .item }}
+    {{- range .Content.Posts }}
     <div class="post">
-        <h2 class="post-title"><a href={{.url}}>{{.title}}</a></h2>
-        {{- template "post-meta" . }}
+        <h2 class="post-title"><a href={{.URL|url}}>{{.Content.Title}}</a></h2>
+        {{- template "post-meta" .Page.Content }}
         <div class="post-body">
-            {{.summary}}
-            {{- if .summarized }}
-            <a href={{.url}}>Read More</a>
+            {{.Content.Snippet}}
+            {{- if .Content.Snippet }}
+            <a href={{.URL|url}}>Read More</a>
             {{- end }}
         </div>
     </div>

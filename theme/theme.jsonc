@@ -1,0 +1,4 @@
+{
+    "indexTemplate": ["base-template.html", "index-template.html"],
+    "postTemplate": ["base-template.html", "post-template.html"]
+}

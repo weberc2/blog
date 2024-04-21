@@ -1,0 +1,13 @@
+{{- define "head" }}
+<title>{{.Content.Title}}</title>
+{{- end }}
+
+{{- define "body" }}
+<div class="post">
+    <h2 class="post-title">{{.Content.Title}}</h2>
+    {{- template "post-meta" .Content }}
+    <div class="post-body">
+        {{.Content.Body}}
+    </div>
+</div>
+{{- end }}

@@ -1,1 +1,3 @@
 _output
+**/run.pprof
+**/run.trace
