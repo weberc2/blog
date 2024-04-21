@@ -2,8 +2,6 @@ name: release
 
 on:
   push:
-#    tags:
-#      - '*'
 
 jobs:
   docker:
@@ -23,9 +21,8 @@ jobs:
       - name: Build and push 'release'
         uses: docker/build-push-action@v5
         with:
-          context: .
           platforms: linux/amd64,linux/arm64
-          build-args: FUTHORC_PROFILE=release
+          build-args: PROFILE=release,SITE_ROOT=https://blog.weberc2.com
           push: true
           tags: |
             weberc2/blog:latest
@@ -35,9 +32,8 @@ jobs:
       - name: Build and push 'internal'
         uses: docker/build-push-action@v5
         with:
-          context: .
           platforms: linux/amd64,linux/arm64
-          build-args: FUTHORC_PROFILE=internal
+          build-args: PROFILE=internal,SITE_ROOT=https://blog.falcon-atlas.ts.net
           push: true
           tags: |
             weberc2/blog:internal

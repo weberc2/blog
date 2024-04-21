@@ -1,19 +1,19 @@
-ARG FUTHORC_PROFILE=release
+ARG PROFILE
 
-FROM weberc2/futhorc:0.1.11
+FROM weberc2/futhorc
 
-ARG FUTHORC_PROFILE
+ARG SITE_ROOT
 
 WORKDIR /workspace
 
 COPY . .
 
-RUN futhorc build --profile ${FUTHORC_PROFILE} --output /blog
+RUN LOG_LEVEL=debug futhorc --site-root ${SITE_ROOT}
 
 FROM caddy:2.4.5
-ARG FUTHORC_PROFILE
+ARG PROFILE
 
-COPY --from=0 /blog /usr/share/caddy
-COPY --from=0 /workspace/${FUTHORC_PROFILE}.Caddyfile /etc/caddy/Caddyfile
+COPY --from=0 /workspace/_output /usr/share/caddy
+COPY --from=0 /workspace/${PROFILE}.Caddyfile /etc/caddy/Caddyfile
 
 CMD caddy run --config /etc/caddy/Caddyfile
