@@ -109,6 +109,6 @@ a solid tool. Definitely the best thing I've found for getting a small project
 up and running quickly. I'm not getting any kickbacks for this paragraph; just
 giving credit where it's due.
 
-[0]: https://bitbucket.org/weberc2/neon
+[0]: https://github.com/weberc2/neon
 [1]: https://twitter.com/weberc2
 [2]: https://www.bitbucket.org/product/features/pipelines
