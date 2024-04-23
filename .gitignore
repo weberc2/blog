@@ -1,3 +1,4 @@
 _output
 **/run.pprof
 **/run.trace
+**/.DS_Store
