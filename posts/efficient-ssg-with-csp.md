@@ -59,7 +59,8 @@ channels.
 
 ## SSG stages
 
-However, you build it, a static site generator for a blog has to do the following (at a minimum):
+However you build it, a static site generator for a blog has to do the
+following (at a minimum):
 
 1. Iterate over the source markdown post files
 2. Parse the metadata out of the markdown post files and convert the markdown to
