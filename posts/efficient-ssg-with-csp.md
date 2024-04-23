@@ -76,7 +76,7 @@ following (at a minimum):
 
 To leverage CSP to parallelize my SSG, I'm roughly modeling each SSG stage as an actor:
 
-![actor diagram](/assets/posts/efficient-ssg-with-csp/ssg-actor-architecture.png)
+[![actor diagram][actor-diagram]][actor-diagram]
 
 1. [FileFinder::PostSources](https://github.com/weberc2/futhorc/blob/19171b9/pkg/futhorc/filefinder.go)
    * Concurrency: 1
@@ -156,10 +156,12 @@ CPU work could run while the process was awaiting disk I/O--it took about 15
 seconds with the single-core actor version versus the 20 seconds of the
 single-threaded imperative version.
 
-![Trace profile](/assets/posts/efficient-ssg-with-csp/trace.png)
+[![Trace profile][trace-profile]][trace-profile]
 
 [post-template]: https://github.com/weberc2/blog/blob/84d33a2/theme/post-template.html
 [index-template]: https://github.com/weberc2/blog/blob/84d33a2/theme/index-template.html
+[actor-diagram]: /assets/posts/efficient-ssg-with-csp/ssg-actor-architecture.png
+[trace-profile]: /assets/posts/efficient-ssg-with-csp/trace.png
 
 [^0]: I'm using [Go templates](https://pkg.go.dev/html/template), and I have one
       [post template file][post-template], one [index template
