@@ -1,3 +1,5 @@
 _output
+.envrc
 **/run.pprof
 **/run.trace
+**/.DS_Store

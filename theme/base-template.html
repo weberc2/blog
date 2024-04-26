@@ -34,7 +34,7 @@
     </script>
 </head>
 
-<body onload=submitAnalytics()>
+<body{{if not (startswith (printf "%s" .HomePage) "file://")}} onload="submitAnalytics()"{{end}}>
     <h1 id="site-header"><a id="site-title" href="{{.HomePage}}">Craig Weber</a></h1>
     <div id="page" class="center-column">
         {{- template "body" . }}
