@@ -71,7 +71,8 @@ working on macOS).
 If you find an issue with these instructions, consider [opening an
 issue](https://github.com/weberc2/blog/issues) against my blog or submit a pull
 request. You can also try messaging me directly (see my contact info at the
-bottom of the page).
+bottom of the page). You can also comment on this post generally [on
+Mastodon](https://stranger.social/@weberc2/112349150437899575)
 
 # Attribution
 
