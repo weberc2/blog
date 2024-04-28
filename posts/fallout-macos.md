@@ -2,7 +2,7 @@
 Title: "Fallout: easy(ish) installation on macOS (Apple Silicon)"
 # NB: post thumbnails aren't yet supported in futhorc, but this is the one to
 # use if support gets added
-Thumbnail: /assets/posts/fallout-macos-install/fallout.jpg
+Thumbnail: /assets/posts/fallout-macos/fallout.jpg
 Date: 2024-04-28
 Tags: [macos, gaming]
 ---
@@ -24,7 +24,8 @@ working on macOS).
 
 # Instructions
 
-1. Install the [Steam macOS client][install-steam]
+1. Install the [Steam macOS client][install-steam] ![install steam](/assets/posts/fallout-macos/install-steam.png)
+
 2. From the terminal, run Steam with the `-console` flag:
    `/Applications/Steam.app/Contents/MacOS/steam_osx -console`. This will give
    you a new `CONSOLE` tab at the top beside the `STORE`, `LIBRARY`, etc tabs.
@@ -48,21 +49,24 @@ working on macOS).
    [2024-04-28 14:12:24] Not updating bootstrapper: No update necessary: current version 4.0, package version 4.0
    [2024-04-28 14:12:24] Shutdown
    ```
+
 3. In the `CONSOLE` tab of the Steam client, run `download_depot 38400
    38409`[^1]. After a moment, the console should report that the download has
    begun and when it completes, it will print the download path. Optionally
    move or copy the depot directory somewhere more accessible, like
    `~/Games/Fallout` ![download game from steam
-   console](/assets/posts/fallout-macos-install/steam-console.png)
+   console](/assets/posts/fallout-macos/steam-console.png)
+
 4. Download the Fallout CE installer (the macOS .dmg file) from the [Fallout CE
    releases page][fallout1-ce-releases] if you haven't already. Running the
    installer should open a Finder window with just the `Fallout Community
    Edition` app; drag that into your depot directory (e.g., `~/Games/Fallout`).
    ![drag fallout-ce to depot
-   directory](/assets/posts/fallout-macos-install/fallout-ce-installer.png)
+   directory](/assets/posts/fallout-macos/fallout-ce-installer.png)
+
 5. Open your depot directory in a Finder window and double-click the `Fallout
    Community Edition` application to start the game.
-   ![fallout](/assets/posts/fallout-macos-install/fallout.jpg)
+   ![fallout](/assets/posts/fallout-macos/fallout.jpg)
 
 If you find an issue with these instructions, consider [opening an
 issue](https://github.com/weberc2/blog/issues) against my blog or submit a pull
