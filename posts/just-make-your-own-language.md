@@ -8,6 +8,8 @@ TL;DR: Musings about "just make your own language" as a trite retort to
 programming language criticism and how "rewrite it in Rust" might be threatening
 that attitude.
 
+---
+
 I've been programming since the early 2000s. I started in PHP, and then learned
 Java, Python, C, and C++. In the early days especially, programming communities
 were super toxic. If you had questions and didn't read The Correct Textbook
