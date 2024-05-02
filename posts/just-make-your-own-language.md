@@ -43,13 +43,14 @@ in the C and C++ communities are having none of it. The sacrilege! *Sacré bleu*
 
 FWIW, I'm not a Rust fanboy--I think it's an improvement over C and C++, and I
 like a lot about it, but it's not likely to be my main language any time soon.
-And moreover the Rust community has its own foibles that chafe me (criticizing a
-certain other language without ever actually analyzing *why* people are drawn to
-and retained by said language in the first place 🙃). I also think "rewrite it
-in Rust" is pretty facile--it's often a lazy substitute for a reasoned
-cost/benefit analysis. Even still, I appreciate that the whole "rewrite it in
-rust" phenomenon *might* make some C and C++ loyalists a little less likely to
-berate their fellow language enthusiasts when concerns are raised[^2].
+And moreover the Rust community has its own foibles that chafe me (criticizing
+*my preferred language* without making a discernible effort to acknowledge *how*
+it manages to draw *and retain* its practitioners and enthusiasts 🙃[^2]). I
+also think "rewrite it in Rust" is pretty facile--it's often a lazy substitute
+for a reasoned cost/benefit analysis. Even still, I appreciate that the whole
+"rewrite it in rust" phenomenon *might* make some C and C++ loyalists a little
+less likely to berate their fellow language enthusiasts when concerns are
+raised[^3].
 
 [^0]: Not all or necessarily even a majority. Ideally that would be implicit in
       "many", but somehow I find myself needing to caveat these things...
@@ -59,6 +60,11 @@ berate their fellow language enthusiasts when concerns are raised[^2].
       languages" as though that is somehow not incumbent in referring to them by
       different names. 🙃
 
-[^2]: Please note that my optimism about they hypothetical decrease in toxicity
+[^2]: And to really bring things full circle, *my preferred language*'s
+      community has *its own foibles*! Programming language communities have
+      evolved quite a lot over the intervening decades, but human nature remains
+      a potent force.
+
+[^3]: Please note that my optimism about they hypothetical decrease in toxicity
       in the C and C++ communities is not the same thing as reveling in a
       hypothetical decline in either language's market share or some such thing.
