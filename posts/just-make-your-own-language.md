@@ -4,6 +4,10 @@ Date: 2024-05-02
 Tags: [rust, c, c++, culture]
 ---
 
+TL;DR: Musings about "just make your own language" as a trite retort to
+programming language criticism and how "rewrite it in Rust" might be threatening
+that attitude.
+
 I've been programming since the early 2000s. I started in PHP, and then learned
 Java, Python, C, and C++. In the early days especially, programming communities
 were super toxic. If you had questions and didn't read The Correct Textbook
@@ -11,6 +15,8 @@ About The Blessed Programming Language™️, you would be berated. If you *did*
 said textbook and it didn't address your question, you would *still* be berated
 for trying to do something outside of the instruction of The Correct Textbook
 (if The Correct Textbook™️ doesn't discuss it, then you don't need it, heretic!).
+
+<!-- more -->
 
 One of my least favorite forms of toxicity (albeit not necessarily the most
 toxic) was when someone would try to advocate for the need for a feature in C or
