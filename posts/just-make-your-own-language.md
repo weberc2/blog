@@ -30,7 +30,8 @@ language and also an ecosystem of libraries and tools for it--all so that said
 programmer can reliably build projects or address whatever other issue was
 lacking from the original language. And naturally I did try to make my own
 language a few times before realizing the investment required and how much I
-would need to learn to have a nonzero chance of succeeding.
+would need to learn to have a nonzero chance of succeeding (oh well, had fun,
+learned a lot!).
 
 Anyway, skip ahead a few decades and now many in those same communities are now
 aggrieved that someone actually managed to do exactly what they snarkily
@@ -40,9 +41,9 @@ communities refused to take seriously. And not only that, but now people are
 advocating for the *rewriting of the C and C++ ecosystem in Rust*, and many[^0]
 in the C and C++ communities are having none of it. The sacrilege! *Sacré bleu*!
 
-I'm not a Rust fanboy--I think it's an improvement over C and C++, and I like a
-lot about it, but it's not likely to be my main language any time soon. And
-moreover the Rust community has its own foibles that chafe me (criticizing a
+FWIW, I'm not a Rust fanboy--I think it's an improvement over C and C++, and I
+like a lot about it, but it's not likely to be my main language any time soon.
+And moreover the Rust community has its own foibles that chafe me (criticizing a
 certain other language without ever actually analyzing *why* people are drawn to
 and retained by said language in the first place 🙃). I also think "rewrite it
 in Rust" is pretty facile--it's often a lazy substitute for a reasoned
