@@ -61,6 +61,10 @@ curiously the valid band of values repeats every 256 values, meaning that -246,
 10, and 266 all code for the most sensitive/aggressive scrolling experience and
 -206, 50, and 306 all code for the least aggressive experience.
 
+<!--
+commenting this out until the markdown renderer bug is fixed
+https://github.com/weberc2/futhorc/issues/41
+
 <summary>
 
 <details>
@@ -88,7 +92,8 @@ done
 
 </details>
 
-</summary>
+</summary
+-->
 
 ## Remaining issues
 
