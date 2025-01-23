@@ -10,7 +10,7 @@ COPY . .
 
 RUN LOG_LEVEL=debug futhorc --site-root ${SITE_ROOT}
 
-FROM caddy:2.4.5
+FROM caddy:2.9.1
 ARG PROFILE
 
 COPY --from=0 /workspace/_output /usr/share/caddy

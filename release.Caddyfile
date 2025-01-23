@@ -1,4 +1,10 @@
 https://blog.weberc2.com {
+    # Needed for ZeroSSL. see
+    # https://zerossl.com/documentation/acme/error-codes/ (search for
+    # "caddy_legacy_user_removed") and
+    # https://github.com/caddyserver/caddy/releases/tag/v2.8.0
+    email weberc2@gmail.com
+
     # Set this path to your site's directory.
     root * /usr/share/caddy
 
