@@ -4,15 +4,11 @@ Date: 2025-01-23
 Tags: [linux, linux-desktop, linux-mint]
 ---
 
-I bought a $200 Beelink mini PC with some Christmas money. It has 1TB disk and
-16GB RAM and an Intel N150 with a TDP of about 6W. I was specifically looking
-for a machine that could transcode a 4K stream or two for my Kubernetes cluster,
-since the Raspberry Pis still aren't up to the task. But then I got tempted to
-run a desktop Linux on it as well, and ended up installing Linux Mint. Then I
-got annoyed with the cords and decided to switch to bluetooth
-peripherals--keyboard, speaker, and touchpad. This post documents how I got my
-Apple Magic Trackpad 2 running on Linux Mint and the problems that I solved as
-well as remaining issues.
+I recently bought a cheap little computer and threw Linux Mint on it, and to
+minimize cord clutter, I wanted to replace my USB mouse with my Magic Trackpad
+2. Mostly it worked reasonably well out of the box, but I did have to make a few
+manual changes. This post documents the problems I ran into, how I solved them,
+and what remains to be solved.
 
 <!-- more -->
 
@@ -22,7 +18,7 @@ machine. The basic clicking and cursor movements worked fine, but scrolling was
 really aggressive and I couldn't use gestures to change workspaces like I'm used
 to.
 
-## Gestures
+# Gestures
 
 This was the easiest part. Just open the "Gestures" app from the menu, enable
 gestures (from the Settings tab), and then set the 3 finger swipe gestures
@@ -39,7 +35,7 @@ If you want to debug gestures, you can run `touchegg --debug` in a terminal
 window and it will print the gestures it receives (Linux Mint uses touchegg to
 listen for gestures from input devices).
 
-## Scrolling sensitivity 
+# Scrolling sensitivity 
 
 Linux Mint uses libinput for its input devices. There's no real documentation
 about how to change touchpad sensitivity (at least nothing that was coming up in
