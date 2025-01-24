@@ -26,7 +26,7 @@ on for details.
 
 The `git` CLI respects a `GIT_SSH_COMMAND` environment variable, and the `ssh`
 CLI takes a `-i` flag to specify an "identity file" or private key. If I run
-`GIT_SSH_COMMAND=$HOME/.ssh/github-personal git push`, it will try to push the
+`GIT_SSH_COMMAND="ssh -i $HOME/.ssh/github-personal" git push`, it will try to push the
 current repo using my personal github token. However, I don't want to have to
 manage setting and unsetting that variable as I switch between work and
 personal repositories; I want that setting to "stick" to each repository.
